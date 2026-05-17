@@ -1,0 +1,125 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    text-align: center;
+    transition: 0.5s;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #fc0202;
+    font-weight: bold;
+
+}
+
+h2 {
+    font-weight: bold;
+    border-bottom: 3px solid #f70606;
+    background-color: #bcbcbc;
+
+}
+
+img {
+    width: 250px;
+    border-radius: 4px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #f70606;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.3s ease;
+    background-color: #ff0101;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ff0202;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+}
+
+/* ---------- MENSAJE SECRETO ---------- */
+
+.caja {
+    background-color: #eee;
+    background-image: url("img/caja-secreto.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    padding: 20px;
+    margin: 30px auto;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid #f90202;
+}
+
+#mensajeSecreto {
+    color: transparent;
+    transition: 0.5s;
+    background-image: url("img/caja-secreto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.mostrarColor {
+    color: #fc0303 !important;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #fdfdfd;
+}
+
+.textoGrande {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ---------- ANIMACIÓN ---------- */
+
+.pelota {
+    width: 80px;
+    height: 80px;
+    background-color: #fc0000;
+    border: 2px solid #0b0202;
+    border-radius: 50%;
+    margin: 40px auto;
+    animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(-200px);
+        background-color: #fc0000;
+    }
+
+    to {
+        transform: translateX(200px);
+        background-color: #005cff;
+    }
+}
